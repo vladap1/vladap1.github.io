@@ -1,0 +1,134 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+}
+
+.navbar:first-child {
+    margin-left: -10%;
+}
+
+.navbar-el {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    height: 400px;
+    transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    text-align: center;
+}
+
+.navbar-el:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.navbar-el:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    /* background: url(../images/test1-1.jpg) center 0 no-repeat; */
+    -webkit-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+
+#navbar-el-1::before {
+    background: url(../images/test2-1.jpg) center center no-repeat;
+}
+
+#navbar-el-2::before {
+    background: url(../images/test2-3.jpg) center center no-repeat;
+}
+
+#navbar-el-3::before {
+    background: url(../images/test1-3.jpg) center center no-repeat;
+}
+
+.header{
+    width: 80%;
+    text-align: center;
+    margin: 200px 10%;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 49px;
+    font-family: "Proxima";
+}
+
+.header p {
+    font-size: 1.5em;
+    font-family: "Proxima";
+}
+
+.main-container{
+    margin: 20px 5%;
+}
+
+
+
+/* presentation */
+
+.presentation{
+    margin: 0 10%;
+    text-align: center;
+}
+
+.presentation > div {
+    margin: 100px 0;
+}
+
+.presentation *{
+    color: white;
+}
+
+.presentation h2{
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+/* background */
+
+.cd-fixed-bg {  
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-fixed-bg.cd-fixed-bg--1 {
+    background-image: url("../images/cd-background-1.jpg");
+  }
+  
+  .cd-fixed-bg.cd-fixed-bg--2 {
+    background-image: url("../img/cd-background-2.jpg");
+  }
+  
+  .cd-fixed-bg.cd-fixed-bg--3 {
+    background-image: url("../img/cd-background-3.jpg");
+  }
+  
+  .cd-fixed-bg.cd-fixed-bg--4 {
+    background-image: url("../img/cd-background-4.jpg");
+  }
+  
+  .cd-scrolling-bg {
+    min-height: 100%;
+  }
+  
