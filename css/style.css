@@ -23,8 +23,30 @@ body{
     text-align: center;
 }
 
+.navbar-el > div {
+    height: 400px;
+    width: 100%;
+    position: relativel;
+}
+
+.navbar-el > div::after {
+    content: "";
+    background: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
+.navbar-el > div:hover{
+    opacity: 0;
+}
+
 .navbar-el:hover{
-    opacity: 0.5;
+    /* opacity: 0.5; */
     cursor: pointer;
 }
 
@@ -50,6 +72,10 @@ body{
 }
 
 #navbar-el-3::before {
+    background: url(../images/test1-3.jpg) center center no-repeat;
+}
+
+#navbar-el-index::before {
     background: url(../images/test1-3.jpg) center center no-repeat;
 }
 
